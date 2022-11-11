@@ -1,0 +1,8 @@
+nav ul li {
+  width: 32.33%;
+  text-align: left;
+  text-indent: 1rem;
+}
+nav ul li span {
+  text-indent: 0rem;
+}

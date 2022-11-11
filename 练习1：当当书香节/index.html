@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>当当书香节</title>
-    <!-- 引入首页样式 -->
-    <!-- less -->
+    <!-- 媒体查询 大于1200px -->
     <link rel="stylesheet" href="./css/index.css" />
-    <!-- sass -->
-    <!-- <link rel="stylesheet" href="./css/index1.min.css" /> -->
+    <!-- 媒体查询 大于768px小于1199px -->
+    <link
+      rel="stylesheet"
+      href="./css/index-768-1199.css"
+      media="screen and (min-width:768px) and (max-width:1199px)"
+    />
+    <!-- 媒体查询 大于480px小于767px -->
+    <link
+      rel="stylesheet"
+      href="./css/index-480-767.css"
+      media="screen and (min-width:480px) and (max-width:767px)"
+    />
+    <!-- 媒体查询 小于479px -->
+    <link
+      rel="stylesheet"
+      href="./css/index-479.css"
+      media="screen and (max-width:479px)"
+    />
   </head>
   <body>
     <!-- banner部分 -->
@@ -98,7 +113,11 @@
     <main>
       <ul>
         <li>
-          <img src="./images/xiaowangz.jpg" alt="" />
+          <img
+            src="./images/bg_pic.png"
+            data-src="./images/xiaowangz.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -107,7 +126,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/langtut.jpg" alt="" />
+          <img
+            src="./images/bg_pic.png"
+            data-src="./images/langtut.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -116,7 +139,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/yelusheleng.jpg" alt="" />
+          <img
+            src="images/bg_pic.png"
+            data-src="./images/yelusheleng.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -125,7 +152,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/pinang.jpg" alt="" />
+          <img
+            src="images/bg_pic.png"
+            data-src="./images/pinang.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -134,7 +165,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/dashuju.jpg" alt="" />
+          <img
+            src="images/bg_pic.png"
+            data-src="./images/dashuju.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -143,7 +178,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/cuiyut.jpg" alt="" />
+          <img
+            src="images/bg_pic.png"
+            data-src="./images/cuiyut.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -152,7 +191,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/mingchaonxs.jpg" alt="" />
+          <img
+            src="images/bg_pic.png"
+            data-src="./images/mingchaonxs.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -161,295 +204,11 @@
           <a href="##">点击购买</a>
         </li>
         <li>
-          <img src="./images/musong.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/xiaowangz.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/langtut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/yelusheleng.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/pinang.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/dashuju.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/cuiyut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/mingchaonxs.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/musong.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/xiaowangz.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/langtut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/yelusheleng.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/pinang.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/dashuju.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/cuiyut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/mingchaonxs.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/musong.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/xiaowangz.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/langtut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/yelusheleng.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/pinang.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/dashuju.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/cuiyut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/mingchaonxs.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/musong.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/xiaowangz.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/langtut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/yelusheleng.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/pinang.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/dashuju.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/cuiyut.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/mingchaonxs.jpg" alt="" />
-          <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
-          <div>
-            <p>￥19.9</p>
-            <p>39.8</p>
-          </div>
-          <a href="##">点击购买</a>
-        </li>
-        <li>
-          <img src="./images/musong.jpg" alt="" />
+          <img
+            src="images/bg_pic.png"
+            data-src="./images/musong.jpg"
+            class="images"
+          />
           <p>狼图腾(修订版)（一部描绘、研究蒙古草原狼的“旷世奇书”）</p>
           <div>
             <p>￥19.9</p>
@@ -460,6 +219,6 @@
       </ul>
     </main>
     <!-- 引入首页脚本 -->
-    <!-- <script src="./js/setRem.js"></script> -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
