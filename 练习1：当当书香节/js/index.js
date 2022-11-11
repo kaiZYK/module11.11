@@ -8,10 +8,10 @@ function setRem() {
   html.style.fontSize = (cl_w / ui_w) * 10 + "px";
 }
 window.addEventListener("load", setRem);
-// setRem防抖
+// 防抖setRem
 let timer = null;
 window.addEventListener("resize", function () {
-  this.clearTimeout(timer);
+  clearTimeout(timer);
   timer = setTimeout(setRem, 50);
 });
 
