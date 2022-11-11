@@ -1,0 +1,142 @@
+// 背景色
+$bgc-blue: #011957;
+$bgc-white: #ffffff;
+$bgc-purple: #6745b5;
+// 字体颜色
+$color-black: #000000;
+$color-red: #f13b3b;
+// 字体大小
+$font-weight: 600;
+// 背景图片
+@mixin background($url, $repeat: no-repeat, $x: 0px, $y: 0px) {
+  background: $url $repeat $x $y;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background-color: $bgc-blue;
+}
+
+/* banner部分 */
+.banner {
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}
+
+/* 导航栏部分 */
+nav {
+  width: 100%;
+  height: auto;
+  ul {
+    height: auto;
+    overflow: hidden;
+    li {
+      width: 24%;
+      height: 35px;
+      background-color: $bgc-purple;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 35px;
+      position: relative;
+      cursor: pointer;
+      float: left;
+      margin-right: 0.5%;
+      margin: 0px 0.5% 10px 0.5%;
+      box-shadow: 0px 2px 3px #7d4ebb;
+
+      a {
+        font-size: 17px;
+        color: $bgc-white;
+      }
+      span {
+        width: 20px;
+        height: 20px;
+        border-radius: 7px;
+        display: block;
+        float: right;
+        color: $bgc-white;
+        font-size: 20px;
+        background-color: $bgc-blue;
+        line-height: 20px;
+        text-align: center;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+      }
+    }
+  }
+}
+
+/* 内容部分 */
+main {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    li {
+      width: 48%;
+      height: auto;
+      background-color: $bgc-white;
+      float: left;
+      margin: 10px 1%;
+      border-radius: 10px;
+      padding: 10px 0px;
+      img {
+        width: 100%;
+        margin: 0px auto;
+      }
+      & > p {
+        width: 100%;
+        font-size: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 10px 5px;
+      }
+      div {
+        width: 50%;
+        float: left;
+        margin-left: 5px;
+        p:nth-of-type(1) {
+          font-size: 24px;
+          font-weight: $font-weight;
+          color: $color-red;
+        }
+        p:nth-of-type(2) {
+          font-size: 20px;
+          color: $color-black;
+          text-decoration: line-through;
+        }
+      }
+      a {
+        width: 50px;
+        height: 50px;
+        display: block;
+        font-size: 18px;
+        float: right;
+        margin-right: 5px;
+        font-weight: $font-weight;
+        color: $bgc-white;
+        background-color: $color-red;
+        box-sizing: border-box;
+        padding: 1px 7px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
