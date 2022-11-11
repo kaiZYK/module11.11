@@ -1,0 +1,313 @@
+// 颜色
+@color-red: #e6071b;
+@color-white: #ffffff;
+@color-black: #333333;
+@color-gray1: #666666;
+@color-gray2: #ababab;
+@bgc-gray: #eeeeee;
+@bgc-white: #ffffff;
+@bgc-red: #e6071b;
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: @bgc-gray;
+  min-width: 250px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 头部 */
+header {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  background-color: @bgc-red;
+  display: flex;
+  justify-content: space-between;
+  a {
+    width: 3rem;
+    height: 100%;
+    &:nth-of-type(1) {
+      background: url(../images/back.png) no-repeat center;
+      background-size: 2.5rem;
+    }
+    &:nth-of-type(2) {
+      background: url(../images/qhome.png) no-repeat center;
+      background-size: 1.5rem;
+    }
+  }
+  p {
+    color: @color-white;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+}
+
+/* 交易成功部分 */
+.success {
+  width: 100%;
+  height: 3rem;
+  background: url(../images/supchenge.png);
+  background-size: cover;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 2rem;
+    height: 2rem;
+    background: url(../images/supchok.png) no-repeat 0.3rem 0.4rem;
+    background-size: 1.6rem;
+  }
+  p {
+    color: @color-white;
+    font-size: 1.2rem;
+  }
+}
+
+/* 地址部分 */
+.address {
+  width: 100%;
+  height: auto;
+  padding: 0.8rem 6.5rem 0.8rem 0.8rem;
+  box-sizing: border-box;
+  background-color: @bgc-white;
+  margin-bottom: 0.8rem;
+  display: flex;
+  & > img {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0.4rem 0.4rem 0rem 0rem;
+  }
+  div {
+    p {
+      color: @color-gray1;
+      line-height: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+/* 商品购买页 */
+.shop {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.8rem;
+
+  .shop-main {
+    width: 100%;
+    height: auto;
+    background-color: @bgc-gray;
+    border-top: 0.1rem solid #d8d8d8;
+    li {
+      display: flex;
+      border-bottom: 0.1rem solid #d8d8d8;
+      img {
+        width: 4rem;
+        height: 4rem;
+        margin: 0rem 0rem 0rem 0.5rem;
+        align-self: center;
+      }
+      div {
+        flex: 1;
+        margin: 0.5rem;
+        p {
+          font-size: 1rem;
+          box-sizing: border-box;
+          padding-right: 8rem;
+        }
+        & > p:nth-of-type(1) {
+          color: @color-gray1;
+        }
+        & > p:nth-of-type(2) {
+          color: @color-gray2;
+        }
+        & > p:nth-of-type(3) {
+          color: @color-black;
+        }
+      }
+      & > p {
+        color: @color-red;
+        font-size: 1rem;
+        margin: 0.5rem 0.5rem 0rem 0rem;
+      }
+    }
+  }
+  .shop-footer {
+    width: 100%;
+    background-color: @bgc-white;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    div:nth-of-type(1) {
+      color: @color-gray1;
+    }
+    div:nth-of-type(2) > p:nth-of-type(1) {
+      color: @color-gray1;
+    }
+    div:nth-of-type(2) > p:nth-of-type(2) {
+      color: @color-red;
+    }
+  }
+}
+.shop-header {
+  width: 100%;
+  height: 2.5rem;
+  background-color: @bgc-white;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
+  span {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../images/gift1.png) no-repeat 0.1rem 0.1rem;
+    background-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+    color: @color-black;
+  }
+}
+
+/* 联系店家部分 */
+.tel {
+  width: 100%;
+  height: 5.5rem;
+  background-color: @bgc-white;
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  .tel-btn {
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    button {
+      width: 17rem;
+      height: 1.8rem;
+      border: 1px solid #d1d1d1;
+      background-color: @bgc-white;
+      border-radius: 0.5rem;
+      color: @color-gray1;
+      font-size: 1rem;
+      &:nth-of-type(1) {
+        background: url(../images/callout.png) no-repeat 4.8rem 0.2rem;
+        background-size: 1.4rem;
+      }
+      &:nth-of-type(2) {
+        background: url(../images/comein.png) no-repeat 4.6rem 0.15rem;
+        background-size: 1.4rem;
+      }
+    }
+  }
+}
+
+/* 订单编号部分 */
+.serial {
+  width: 100%;
+  height: auto;
+  background-color: @bgc-white;
+  margin-bottom: 0.8rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  div {
+    flex: 1;
+    p {
+      font-size: 1.2rem;
+      color: @color-gray2;
+    }
+  }
+  button {
+    width: 4rem;
+    height: 1.7rem;
+    font-size: 1rem;
+    color: @color-gray1;
+    border: 1px solid #d8d8d8;
+    border-radius: 0.3rem;
+    background-color: @bgc-white;
+  }
+}
+
+/* 想要部分 */
+.want {
+  width: 100%;
+  height: auto;
+  background-color: @bgc-white;
+  & > p {
+    font-size: 1.2rem;
+    color: @color-black;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+  ul {
+    width: 100%;
+    border-bottom: 0.1rem solid #d8d8d8;
+    box-sizing: border-box;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 23rem;
+      height: 15rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      a {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        width: 100%;
+      }
+      p:nth-of-type(1) {
+        color: @color-black;
+        font-size: 1rem;
+      }
+      p:nth-of-type(2) {
+        color: @color-red;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  div {
+    width: 100%;
+    height: 4rem;
+    background-color: @bgc-white;
+    margin-bottom: 0.8rem;
+    box-sizing: border-box;
+    padding: 1.2rem 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      width: 6rem;
+      height: 1.7rem;
+      font-size: 1rem;
+      color: @color-gray1;
+      border: 1px solid #d8d8d8;
+      border-radius: 0.3rem;
+      background-color: @bgc-white;
+    }
+  }
+}
